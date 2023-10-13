@@ -19,5 +19,10 @@ public class TransactionService {
     public List<TransactionHistory> statment(String acNumber) {
         return transactionRepo.findByacNumber(acNumber);
     }
+
+    public List<TransactionHistory> getAll(String acNumber) {
+        return transactionRepo.findByacNumber(acNumber);
+
+    }
 }
 
